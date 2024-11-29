@@ -4,12 +4,12 @@
 #include <linux/pci.h>
 #include <linux/init.h>
 
-static struct pci_device_id pciidlist[]= {
+static struct pci_device_id pciIdList[]= {
 	{PCI_DEVICE(PCI_VENDOR_ID_NAME, PCI_DEVICE_ID_NAME_IDNUM),},
 	{0,}
 };
 
-MODULE_DEVICE_TABLE(pci, ids);
+MODULE_DEVICE_TABLE(pci, pciIdList);
 
 static	unsigned char skel_get_revision(struct pci_dev *dev){
 	u8 revision;

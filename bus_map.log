@@ -52,12 +52,14 @@
 																	|  CARD	 |					|  CARD	 |
 																	----------					----------
 
-############################################
-## (domain, bus, device, function)
+####################################################
+## (domain,		 bus, 			device, 		function)		 #
+## (|->16bits,  |->8bits,		|->5bits,		 |->3bits) #
+####################################################
 domain 0000
 		|
 		|-->	00:00.0 --> Host bridge
-						|--> 00:00.2  --- Input/output Memory Management Unit(IOUMMU).
+						|--> 00:00.2  --- Input/output Memory Management Unit(IOMMU).
 		|-->	00:01.0 --> Host bridge
 						|--> 00:01.1 PCI Bridge
 						|--> 00:01.3 PCI Bridge
@@ -99,5 +101,14 @@ domain 0000
 						|--> 09:00.3 --> USB controller
 		|-->	0a:00.0 --> Non-Essential Instrumentation [1300](0x000a->14)
 						|--> 0a:00.2 --> SATA controller
+#######################################################
+##  Global registry -- PCI Special Interest Group.	 ##
+#######################################################
+ -Advanced Micro Devices, Inc (4130, 1022 Hex)
+ -Intel Corporation (32902, 8086 Hex)
+
+
+
+
 
 
