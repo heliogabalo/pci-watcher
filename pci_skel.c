@@ -4,7 +4,7 @@
 #include <linux/pci.h>
 #include <linux/init.h>
 
-static struct pci_device_id[]= {
+static struct pci_device_id pciidlist[]= {
 	{PCI_DEVICE(PCI_VENDOR_ID_NAME, PCI_DEVICE_ID_NAME_IDNUM),},
 	{0,}
 };
