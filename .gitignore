@@ -1,0 +1,14 @@
+libtool*
+src/.deps/
+src/.libs/
+*.l[ao]
+src/main
+tests/.deps/
+tests/.libs/
+*.trs
+Makefile
+config.h
+INSTALL
+stamp-h1
+check_money
+*_env
