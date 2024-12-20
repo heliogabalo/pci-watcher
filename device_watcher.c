@@ -7,15 +7,18 @@
 
 
 // struct pci_device_id amd_ids;
-struct pci_device_id amd_ids[] = {};
+struct pci_device_id pci_watcher_ids[] = {
+	{ PCI_DEVICE(VENDOR_ID, DEVICE_ID) },
+	{0, }
+};
 
-MODULE_DEVICE_TABLE(pci, amd_ids);
+MODULE_DEVICE_TABLE(pci, pci_watcher_ids);
 
-static struct pci_driver pci_driver = {
+static struct pci_driver pci_watcher_driver = {
 	.name = DRIVER_NAME,
-	.id_table = amd_ids,
-	.probe = probe,
-	.remove = remove,
+	.id_table = pci_watcher_ids,
+	.probe = pci_watcher_probe,
+	.remove = pci_watcher_remove,
 };
 
 static int __init device_watcher_init(void){
