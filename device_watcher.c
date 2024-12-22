@@ -22,7 +22,7 @@ static struct pci_driver pci_watcher_driver = {
 };
 
 static int __init device_watcher_init(void){
-	return pci_register_driver(&pci_driver)
+	return pci_register_driver(&pci_watcher_driver)
 }
 
 struct pci_dev *dev;
