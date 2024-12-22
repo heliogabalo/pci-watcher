@@ -12,3 +12,4 @@ INSTALL
 stamp-h1
 check_money
 *_env
+*.html
