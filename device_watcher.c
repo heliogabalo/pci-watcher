@@ -89,6 +89,6 @@ static unsigned char dw_get_revision(struct pci_dev *dev){
 
 
 static void __exit device_watcher_exit(void){
-	pci_unregister_driver(&pci_driver);
+	pci_unregister_driver(&pci_watcher_driver);
 }
 
