@@ -5,6 +5,7 @@ src/.libs/
 src/main
 tests/.deps/
 tests/.libs/
+tests*
 *.trs
 Makefile
 config.h
@@ -12,4 +13,6 @@ INSTALL
 stamp-h1
 check_money
 *_env
-*.html
+*.Html
+*.md
+
