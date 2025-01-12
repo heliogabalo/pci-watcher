@@ -15,7 +15,7 @@ struct pci_device_id pci_watcher_ids[] = {
 MODULE_DEVICE_TABLE(pci, pci_watcher_ids);
 
 static struct pci_driver pci_watcher_driver = {
-	.name = DRIVER_NAME,
+	.name = "pci_watcher",
 	.id_table = pci_watcher_ids,
 	.probe = pci_watcher_probe,
 	.remove = pci_watcher_remove,
