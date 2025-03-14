@@ -2,6 +2,8 @@ libtool*
 src/.deps/
 src/.libs/
 *.l[ao]
+*.ac
+*.scan
 src/main
 tests/.deps/
 tests/.libs/
@@ -13,5 +15,5 @@ INSTALL
 stamp-h1
 check_money
 *_env
-*.Html
+
 *.md
